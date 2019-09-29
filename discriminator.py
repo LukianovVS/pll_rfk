@@ -20,3 +20,5 @@ def equivalent_ph(rva, snr, X, T):
     d_w  = PI * float(rva[1] - X[1])
     d_ph_est = 2 * snr * T * math.sin(d_ph + d_w * T / 2) * np.sinc( (d_w * T / 2) / PI )
     return d_ph_est     
+
+
